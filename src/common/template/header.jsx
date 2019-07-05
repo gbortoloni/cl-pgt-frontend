@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default props => (
   <header className="main-header">
-    <a href="/#/" className="logo">
+    <Link to="/" className="logo">
       <span className="logo-mini">
         <b>C</b>P
       </span>
@@ -10,9 +11,9 @@ export default props => (
         <i className="fa fa-money" />
         <b> Cl</b> Pgt
       </span>
-    </a>
+    </Link>
     <nav className="navbar navbar-static-top">
-      <a className="sidebar-toggle" data-toggle="offcanvas"></a>
+      <a href className="sidebar-toggle" data-toggle="offcanvas"></a>
     </nav>
   </header>
 );
