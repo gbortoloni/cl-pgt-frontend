@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Navbar from "./navbar";
+
 export default props => (
   <header className="main-header">
     <Link to="/" className="logo">
@@ -13,7 +15,8 @@ export default props => (
       </span>
     </Link>
     <nav className="navbar navbar-static-top">
-      <a href className="sidebar-toggle" data-toggle="offcanvas"></a>
+      <a href className="sidebar-toggle" data-toggle="offcanvas" />
+      <Navbar />
     </nav>
   </header>
 );
