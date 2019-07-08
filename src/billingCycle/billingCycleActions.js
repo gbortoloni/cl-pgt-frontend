@@ -4,7 +4,7 @@ import { initialize } from "redux-form";
 
 import { selectTab, showTabs } from "../common/tab/tabActions";
 
-const BASE_URL = "http://localhost:3003/api";
+const BASE_URL = "https://cl-pgto-backend.herokuapp.com/api";
 const INITIAL_VALUES = { credits: [{}], debts: [{}] };
 
 export function getList() {

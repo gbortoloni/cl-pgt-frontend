@@ -1,7 +1,7 @@
 import { toastr } from "react-redux-toastr";
 import axios from "axios";
 
-const URL = "http://localhost:3003/api/authServices";
+const URL = "https://cl-pgto-backend.herokuapp.com/api/authServices";
 
 export function login(values) {
   return submit(values, `${URL}/login`);
